@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Noto+Sans:wght@100&display=swap');
+
+/* ESTILIZAÇÃO GERAL */
+
+:root {
+    --color-primary: #fb2056;
+    --color-primary-hover: #da1c4b;
+    --color-light-gray: #f5f5f5;
+    --color-light-black: #191919;
+    --color-white: #ffffff;
+}
+
+body {
+    font-size: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: static;
+    text-decoration: none;
+}
+
+/* ESTILIZAÇÃO HEADER */
+
+.container {
+    margin: auto;
+    max-width: 1024px;
+}
+
+.divider {
+    border: 1px solid var(--color-primary);
+    width: 100px;
+    margin: 20px auto;
+}
+
+.btn {
+    border-radius: 30px;
+    padding: 17px 40px;
+    font-weight: 700;
+    border-color: var(--color-primary);
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.btn:hover, 
+.btn:focus {
+    border-color: var(--color-primary-hover);
+    background-color: var(--color-primary-hover);
+    transition: all 0.3s;
+}
+
+.background-overlay {
+background-color: var(--color-light-black);
+opacity: 0.65;
+position: absolute;
+height: 100%;
+width: 100%;
+top: 0;
+left: 0;
+}
+
+.section-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section-title-box{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.section-title-box-1 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.section-title-brasil{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+
+/* page header start */
+#page-header {
+    position: relative;
+    background-color: var(--color-light-black);
+    background-image: url("../imagens/First-background.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding: 20px;
+    height: 650px;
+}
+
+#page-header .container {
+    position: relative;
+}
+
+#page-header #page-header-logo img {
+    height: 90px;
+}
+
+#page-header #page-header-content {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-light-gray);
+    text-align: center;
+    padding: 140px 0;
+}
+
+#page-header #page-header-content h1 {
+    font-size: 72px;
+}
+
+#page-header #page-header-content h2 {
+    font-size: 32px;
+}
+
+/* page header end */
+
+
+/* quot start */
+#quote {
+    background-color: var(--color-light-gray);
+    padding: 40px 0;
+}
+
+#quote .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#quote #quote-content{
+    font-family: 'Noto Sans', sans-serif;
+    flex: 1;
+    text-align: center;
+}
+
+/* quot end */
+
+/* section upcoming events start */
+#upcoming-events {
+    padding: 50px 0;
+}
+
+#upcoming-events #upcoming-events-content {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+#upcoming-events #upcoming-events-content .event {
+    text-align: center;
+    width: 450px;
+}
+
+#upcoming-events #upcoming-events-content .event img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 10px 10px 0 1px rgb(0 0 0 / 7%);
+}
+
+#upcoming-events #upcoming-events-content .event h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px 0;
+    font-size: 22px;
+  }
+
+.img-2 {
+    height: 328.78px;
+    margin-top: 30px;
+}
+
+/* section upcoming events end */
+
+/* section explore start */
+#explore {
+  background-image: url("../imagens/principal-2.jpeg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+  }
+  
+  #explore-2 {
+    background-image: url("../imagens/Second-background.jpg");
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: cover;
+      position: relative;
+      background-attachment: fixed;
+    }
+
+  #explore-3 {
+      background-image: url("../imagens/terceiro-background.jpg");
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: cover;
+      position: relative;
+      background-attachment: fixed;
+      }   
+
+#explore #explore-content {
+    color: var(--color-white);
+    position: relative;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  #explore-2 #explore-content {
+    color: var(--color-white);
+    position: relative;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  #explore-3 #explore-content {
+    color: var(--color-white);
+    position: relative;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .explore-text {
+    font-size: 20px;
+    text-align: justify;
+    text-indent: 10px;
+    padding: 10px;
+  }
+
+
+
+/* section explore end */
+
+/* upcoming tours start */
+
+#upcoming-tours {
+    padding: 70px 0;
+    height: 650px
+  }
+
+  #upcoming-tours-2 {
+    padding: 70px 0;
+    height: 650px;
+  }
+
+  #upcoming-tours .container {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+  }
+
+  #upcoming-tours-2 .container {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+  }
+
+  #upcoming-tours .container div {
+    flex: 1;
+  }
+
+  #upcoming-tours-2 .container div {
+    flex: 1;
+  }
+
+  /* #upcoming-tours .container div img {
+    width: 100%;
+  } */
+
+  #upcoming-tours .section-title {
+    text-align: center;
+  }
+
+  #upcoming-tours-2 .section-title {
+    text-align: center;
+  }
+
+  #upcoming-tours .upcoming-tours-img {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  #upcoming-tours-2 .upcoming-tours-img {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .img-3{
+    width: 400px;
+    height: 350px;
+  }
+
+  .img-4{
+    width: 400px;
+    height: 200px;
+  }
+
+  .export-text{
+    font-size: 15px;
+    text-align: center;
+  }
+/* upcoming tours end */
+
+/* Footer start */
+
+
+
+.paragrafo-rodape {
+    color: var(--color-light-black);
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.paragrafo-rodape-final {
+    color: var(--color-light-black);
+    font-family: 'Cabin', sans-serif;
+    font-size: 10px;
+    font-weight: 200;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Footer ends */
+
+
+/*testes para atualiza*/
+
+.teste-text {
+  font-size: 20px;
+  text-align: justify;
+  text-indent: 10px;
+  padding: 10px;
+  background-color: var(--color-light-gray);
+}
+
+.teste-div {
+  background-color: var(--color-light-gray);
+  height: 500px;
+  align-items: center;
+
+}
+
+.test-exportacao {
+  color: var(--color-light-black);
+  padding: 40px 0;
+  text-align: center;
+  font-size: 20px;
+}
+
+.img-teste {
+    height: 328.78px;
+    margin-top: 30px;
+}
+
+.section-title-teste {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.exportacao-upcoming {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.exportacao-upcoming-2 {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+
+#teste{
+  height: 170px;
+}
+
+/*fim de testes para atualiza*/
+
+/*os três tópicos*/
+
+#box-new {
+  padding: 70px 0;
+  height: 650px
+}
+
+.vc {
+  width: 100%;
+  height: 400px;  
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+}
+
+.export-text-box{
+  font-size: 15px;
+  line-height: 23px;
+ }
+
+ .vc .box1 {
+  height: 350px;
+  width: 350px;
+  margin: 15px;
+  float: left;
+}
+
+.vc .box2 {
+  height: 350px;
+  width: 350px;
+  margin: 15px;
+  float: left;
+}
+
+.vc .box3 {
+  height: 350px;
+  width: 350px;
+  margin: 15px;
+  float: left;
+}
+
+.vc .box4 {
+  height: 350px;
+  width: 350px;
+  margin: 15px;
+  float: left;
+}
+
+.export-text-finans {
+  font-size: 14px;
+  text-align: center;
+}
+
+
